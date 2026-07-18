@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>멕시코·중남미 마케팅 | 한국 브랜드 소셜미디어·인플루언서 마케팅 대행</title>
+<meta name="description" content="한국 브랜드를 위한 멕시코·중남미 마케팅 서비스. 소셜미디어 운영, 인플루언서 마케팅, 팝업, 광고 대행부터 파트너십을 통한 NOM 라벨링·통관·배송까지 지원합니다.">
+<meta name="keywords" content="멕시코 마케팅, 중남미 마케팅 대행, 멕시코 인플루언서, 소셜미디어 운영대행, K-Beauty 멕시코 진출, NOM 라벨링">
+<meta property="og:title" content="Brand Marketing in Mexico That Delivers Real Results">
+<meta property="og:description" content="소셜미디어 · 인플루언서 · 팝업 · 광고 — 멕시코·중남미 마케팅 대행">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "멕시코·중남미 마케팅 서비스",
+  "description": "한국 브랜드를 위한 멕시코·중남미 소셜미디어, 인플루언서, 팝업, 광고 마케팅 대행",
+  "areaServed": ["Mexico", "Latin America", "South Korea"],
+  "knowsAbout": ["Social Media Marketing", "Influencer Marketing", "Brand Campaigns", "Brand Design"]
+}
+</script>
+<style>
+:root{
+  --paper:#FAF9F5;
+  --ink:#141731;
+  --cobalt:#2036C8;
+  --rosa:#E5187D;
+  --sand:#EDE9DF;
+  --line:rgba(20,23,49,.15);
+  --radius:20px;
+  --gutter:clamp(20px,5vw,72px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+  font-size:17px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::selection{background:var(--rosa);color:#fff}
+
+.skip-link{
+  position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;
+  padding:10px 18px;z-index:200;border-radius:0 0 10px 0;font-weight:600;
+}
+.skip-link:focus{left:0}
+
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--rosa);outline-offset:3px;border-radius:4px}
+
+.mono{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+}
+.display{
+  font-family:"Archivo",sans-serif;
+  font-variation-settings:"wdth" 112;
+  font-weight:800;
+  letter-spacing:-.015em;
+  line-height:1.02;
+}
+
+/* ---------- header ---------- */
+header{
+  position:fixed;inset:0 0 auto 0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px var(--gutter);
+  background:color-mix(in srgb,var(--paper) 82%,transparent);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s;
+}
+header.scrolled{border-bottom-color:var(--line)}
+.logo-space{width:24px}
+nav{display:flex;gap:6px}
+nav a{
+  text-decoration:none;font-weight:600;font-size:14.5px;
+  padding:8px 14px;border-radius:100px;transition:background .2s,color .2s;
+}
+nav a:hover{background:var(--ink);color:var(--paper)}
+nav a.nav-cta{background:var(--cobalt);color:#fff}
+nav a.nav-cta:hover{background:var(--rosa)}
+.nav-toggle{display:none}
+
+/* ---------- hero ---------- */
+.hero{
+  min-height:100svh;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:120px var(--gutter) clamp(40px,7vh,80px);
+  position:relative;
+}
+.hero-route{
+  position:absolute;inset:0;width:100%;height:100%;pointer-events:none;
+}
+.hero-route path{
+  stroke:var(--cobalt);stroke-width:2;fill:none;
+  stroke-dasharray:2 10;stroke-linecap:round;opacity:.5;
+  animation:routeFlow 30s linear infinite;
+}
+@keyframes routeFlow{to{stroke-dashoffset:-600}}
+.port-dot{fill:var(--rosa)}
+
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;color:var(--cobalt);
+  margin-bottom:22px;
+}
+.hero-eyebrow .pulse{
+  width:8px;height:8px;border-radius:50%;background:var(--rosa);
+  animation:pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.7);opacity:.4}}
+h1{
+  font-size:clamp(32px,5.6vw,78px);
+  max-width:22ch;
+}
+h1 .accent{color:var(--cobalt)}
+h1 .rosa{color:var(--rosa)}
+.hero-actions{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  text-decoration:none;font-weight:700;font-size:16px;
+  padding:16px 28px;border-radius:100px;
+  transition:transform .2s,background .2s,color .2s;
+  border:2px solid var(--ink);
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--cobalt);border-color:var(--cobalt)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+
+/* ---------- marquee ---------- */
+.marquee{
+  background:var(--cobalt);color:var(--paper);
+  overflow:hidden;white-space:nowrap;
+  padding:14px 0;
+  border-block:2px solid var(--ink);
+}
+.marquee-track{
+  display:inline-flex;
+  animation:marquee 28s linear infinite;
+}
+.marquee span{
+  font-family:"Archivo",sans-serif;font-weight:800;font-variation-settings:"wdth" 115;
+  font-size:clamp(15px,1.6vw,20px);letter-spacing:.04em;
+  padding:0 22px;
+}
+.marquee .dot{color:var(--rosa)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){
+  .marquee-track{animation:none}
+}
+
+/* ---------- sections ---------- */
+section{padding:clamp(72px,11vw,140px) var(--gutter)}
+.section-head{
+  display:flex;align-items:baseline;gap:20px;
+  border-top:2px solid var(--ink);
+  padding-top:18px;margin-bottom:clamp(36px,5vw,64px);
+  flex-wrap:wrap;justify-content:space-between;
+}
+.section-head .mono{color:var(--cobalt)}
+h2{
+  font-size:clamp(30px,4.6vw,58px);
+  font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 110;
+  font-weight:800;letter-spacing:-.015em;line-height:1.08;
+}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,80px);align-items:start}
+.about-lede{
+  font-size:clamp(20px,2.2vw,28px);line-height:1.55;font-weight:600;letter-spacing:-.01em;
+}
+.about-lede em{font-style:normal;color:var(--cobalt);border-bottom:3px solid var(--rosa)}
+.about-sub{
+  margin-top:18px;font-size:15.5px;line-height:1.75;
+  color:color-mix(in srgb,var(--ink) 74%,transparent);
+}
+.exp-list{list-style:none;display:grid;gap:14px;margin-bottom:26px}
+.exp-list li{
+  display:flex;gap:14px;align-items:flex-start;
+  background:var(--sand);border-radius:var(--radius);
+  padding:18px 20px;font-weight:500;font-size:15.5px;line-height:1.6;
+}
+.exp-list .bullet{
+  flex:none;width:10px;height:10px;border-radius:50%;
+  background:var(--cobalt);margin-top:9px;
+}
+
+/* what we do */
+.what{background:var(--ink);color:var(--paper);border-radius:clamp(24px,4vw,48px);margin-inline:clamp(8px,1.5vw,20px)}
+.what .section-head{border-top-color:var(--paper)}
+.what .section-head .mono{color:var(--rosa)}
+.what h2{max-width:22ch}
+.what-intro{
+  color:#fff;font-weight:500;
+  font-size:clamp(16.5px,1.8vw,21px);letter-spacing:-.005em;line-height:1.75;
+  max-width:66ch;
+  margin-bottom:clamp(40px,5vw,60px);
+}
+.stat-label{
+  display:block;font-size:13.5px;font-weight:500;
+  color:rgba(250,249,245,.65);margin-bottom:12px;letter-spacing:.02em;
+}
+.platform-stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:14px;margin-bottom:clamp(40px,5vw,60px);max-width:720px;
+}
+.platform-stat{
+  border:1px solid rgba(250,249,245,.22);border-radius:var(--radius);
+  padding:26px 24px;
+}
+.platform-stat .mono{color:#8FA0FF;display:block;margin-bottom:10px}
+.platform-stat b{
+  font-family:"Archivo",sans-serif;font-weight:800;font-variation-settings:"wdth" 110;
+  font-size:clamp(34px,4.5vw,58px);line-height:1;letter-spacing:-.02em;color:var(--paper);
+}
+.platform-stat .unit{
+  font-size:.45em;font-weight:700;margin-left:6px;color:var(--rosa);
+  font-family:"Pretendard Variable",Pretendard,sans-serif;letter-spacing:0;
+}
+.chain{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.chain-item{
+  border:1px solid rgba(250,249,245,.22);border-radius:var(--radius);
+  padding:22px 20px;transition:background .25s,border-color .25s;
+}
+.chain-item:hover{background:rgba(250,249,245,.07);border-color:var(--rosa)}
+.chain-item .mono{color:var(--rosa);display:block;margin-bottom:10px}
+.chain-item h3{font-size:17.5px;font-weight:700;line-height:1.4;margin-bottom:6px}
+.chain-item p{font-size:14px;color:rgba(250,249,245,.7);line-height:1.55}
+.partnership-note{
+  margin-top:clamp(32px,4vw,48px);
+  border-top:1px solid rgba(250,249,245,.22);
+  padding-top:22px;
+  display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap;
+  font-size:15px;color:rgba(250,249,245,.75);
+}
+.partnership-note .mono{color:#8FA0FF;flex:none;padding-top:3px}
+.partnership-note p{max-width:64ch}
+
+/* services */
+.service-row{
+  border-bottom:1px solid var(--line);
+  padding:clamp(28px,4vw,44px) 0;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);
+  gap:18px clamp(24px,4vw,64px);align-items:start;
+  transition:padding-left .3s;
+}
+.service-row:first-of-type{border-top:1px solid var(--line)}
+.service-row:hover{padding-left:14px}
+.service-name{
+  font-family:"Archivo",sans-serif;font-weight:800;font-variation-settings:"wdth" 108;
+  font-size:clamp(23px,3.3vw,42px);letter-spacing:-.015em;line-height:1.12;
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+}
+.service-name .tick{
+  width:14px;height:14px;border-radius:50%;
+  border:3px solid var(--cobalt);flex:none;
+  transition:background .25s,border-color .25s;
+}
+.service-row:hover .tick{background:var(--rosa);border-color:var(--rosa)}
+.service-desc{font-size:15.5px;color:color-mix(in srgb,var(--ink) 72%,transparent);margin-top:10px;max-width:46ch}
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding-top:6px}
+.tag{
+  font-size:14px;font-weight:600;
+  border:1.5px solid var(--ink);border-radius:100px;
+  padding:8px 16px;
+  transition:background .2s,color .2s,border-color .2s;
+}
+.tag:hover{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+
+/* good to know (FAQ) */
+.faq{max-width:920px;margin:0 auto;text-align:center}
+.faq .mono{color:var(--rosa);display:block;margin-bottom:18px}
+.faq h2{margin-bottom:clamp(30px,4vw,52px)}
+.faq-list{text-align:left;border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{
+  list-style:none;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+  padding:26px 4px;
+  font-weight:700;font-size:clamp(16.5px,1.7vw,20px);letter-spacing:-.01em;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary .plus{
+  flex:none;position:relative;width:18px;height:18px;
+}
+.faq-item summary .plus::before,
+.faq-item summary .plus::after{
+  content:"";position:absolute;background:var(--rosa);border-radius:2px;
+  transition:transform .25s;
+}
+.faq-item summary .plus::before{left:0;top:8px;width:18px;height:2.5px}
+.faq-item summary .plus::after{left:8px;top:0;width:2.5px;height:18px}
+.faq-item[open] summary .plus::after{transform:scaleY(0)}
+.faq-item .faq-body{
+  padding:0 4px 26px;
+  font-size:15.5px;color:color-mix(in srgb,var(--ink) 75%,transparent);
+  max-width:60ch;
+}
+
+/* boarding pass */
+.ticket-wrap{
+  display:flex;justify-content:center;
+  padding:0 var(--gutter);
+  margin:clamp(30px,4vw,56px) 0;
+}
+.ticket{
+  display:flex;width:min(420px,100%);
+  background:#fff;border:2px solid var(--ink);border-radius:14px;
+  overflow:hidden;position:relative;
+  box-shadow:5px 5px 0 rgba(20,23,49,.1);
+}
+.ticket-main{flex:1;padding:14px 18px 12px;min-width:0}
+.ticket-top{
+  display:flex;justify-content:space-between;align-items:center;
+  color:var(--cobalt);margin-bottom:10px;
+}
+.ticket-top .mono,.ticket-stub .mono{font-size:9.5px}
+.ticket-flight{color:var(--rosa)}
+.ticket-route{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+}
+.ticket-port b{
+  display:block;font-family:"Archivo",sans-serif;font-weight:800;font-variation-settings:"wdth" 112;
+  font-size:clamp(21px,3vw,26px);line-height:1;letter-spacing:-.01em;
+}
+.ticket-port span{
+  font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.12em;
+  color:color-mix(in srgb,var(--ink) 60%,transparent);
+}
+.ticket-port:last-child{text-align:right}
+.ticket-plane{color:var(--cobalt);flex:none}
+.ticket-details{
+  display:flex;gap:22px;margin-top:11px;padding-top:9px;
+  border-top:1px solid var(--line);
+}
+.ticket-details .mono{display:block;font-size:8.5px;color:color-mix(in srgb,var(--ink) 55%,transparent)}
+.ticket-details b{font-size:11.5px;font-weight:700}
+.ticket-stub{
+  flex:none;width:96px;
+  border-left:2px dashed var(--line);
+  padding:14px 12px 12px;
+  display:flex;flex-direction:column;justify-content:space-between;gap:8px;
+  color:var(--cobalt);position:relative;
+}
+.ticket-stub::before,.ticket-stub::after{
+  content:"";position:absolute;left:-8px;width:14px;height:14px;border-radius:50%;
+  background:var(--paper);
+}
+.ticket-stub::before{top:-7px}
+.ticket-stub::after{bottom:-7px}
+.ticket-barcode{display:flex;gap:2.5px;align-items:stretch;height:26px}
+.ticket-barcode i{display:block;background:var(--ink);width:2.5px}
+.ticket-barcode i:nth-child(3n){width:4px}
+.ticket-barcode i:nth-child(4n){width:1.5px}
+@media (max-width:480px){
+  .ticket-stub{display:none}
+  .ticket-details{gap:16px}
+}
+
+.contact{
+  text-align:center;
+  padding-bottom:clamp(90px,12vw,160px);
+}
+.contact .mono{color:var(--cobalt);display:block;margin-bottom:20px}
+.contact h2{font-size:clamp(36px,6.4vw,88px);max-width:18ch;margin:0 auto clamp(32px,4vw,48px)}
+.contact h2 .rosa{color:var(--rosa)}
+.mail-btn{
+  display:inline-flex;align-items:center;gap:14px;
+  font-family:"Archivo",sans-serif;font-weight:800;font-variation-settings:"wdth" 112;
+  font-size:clamp(18px,2.4vw,28px);letter-spacing:.02em;text-decoration:none;
+  background:var(--cobalt);color:#fff;
+  padding:clamp(18px,2.5vw,26px) clamp(30px,4.5vw,54px);
+  border-radius:100px;border:3px solid var(--ink);
+  transition:background .25s,transform .25s;
+}
+.mail-btn:hover{background:var(--rosa);transform:translateY(-3px)}
+.mail-btn svg{flex:none}
+.contact-alt{
+  margin-top:22px;font-size:14px;
+  color:color-mix(in srgb,var(--ink) 60%,transparent);
+}
+.contact-alt a{color:var(--cobalt);font-weight:600;text-underline-offset:3px}
+.contact-alt a:hover{color:var(--rosa)}
+
+/* footer */
+footer{
+  border-top:2px solid var(--ink);
+  padding:28px var(--gutter);
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  font-size:14px;color:color-mix(in srgb,var(--ink) 70%,transparent);
+}
+footer .route-mini{color:var(--cobalt);font-weight:600}
+
+/* ---------- responsive ---------- */
+@media (max-width:860px){
+  .about-grid{grid-template-columns:1fr}
+  .service-row{grid-template-columns:1fr}
+}
+@media (max-width:680px){
+  nav{
+    position:fixed;inset:64px 12px auto 12px;
+    flex-direction:column;background:var(--paper);
+    border:2px solid var(--ink);border-radius:var(--radius);
+    padding:14px;gap:4px;
+    transform:translateY(-12px);opacity:0;visibility:hidden;
+    transition:.25s;box-shadow:0 18px 40px rgba(20,23,49,.14);
+  }
+  nav.open{transform:none;opacity:1;visibility:visible}
+  nav a{padding:12px 16px;font-size:16px}
+  .nav-toggle{
+    display:inline-flex;align-items:center;gap:8px;
+    background:none;border:2px solid var(--ink);border-radius:100px;
+    padding:8px 16px;font:inherit;font-weight:700;font-size:14px;cursor:pointer;
+  }
+  .hero-route{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<header id="header">
+  <span class="logo-space" aria-hidden="true"></span>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav" id="navToggle">MENU</button>
+  <nav id="nav" aria-label="주요 메뉴">
+    <a href="#about">About</a>
+    <a href="#what">What we do</a>
+    <a href="#services">Services</a>
+    <a class="nav-cta" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<!-- ===== HERO ===== -->
+<section class="hero" id="top" aria-label="소개">
+  <svg class="hero-route" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path d="M1080,150 C900,90 700,140 560,260 C430,370 300,380 170,520"/>
+    <circle class="port-dot" cx="1080" cy="150" r="6"/>
+    <circle class="port-dot" cx="170" cy="520" r="6"/>
+  </svg>
+
+  <p class="hero-eyebrow mono"><span class="pulse" aria-hidden="true"></span>Korea → Mexico · LATAM Marketing</p>
+  <h1 class="display">Brand Marketing in <span class="accent">Mexico</span><br>That Delivers <span class="rosa">Real Results</span></h1>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="#services">서비스 보기</a>
+    <a class="btn btn-ghost" href="mailto:sia@blueboat.co.kr">Contact me</a>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>SOCIAL MEDIA</span><span class="dot">●</span>
+    <span>INFLUENCER</span><span class="dot">●</span>
+    <span>POP-UP</span><span class="dot">●</span>
+    <span>PAID ADS</span><span class="dot">●</span>
+    <span>BRAND DESIGN</span><span class="dot">●</span>
+    <span>K-BEAUTY · K-FOOD</span><span class="dot">●</span>
+    <span>SOCIAL MEDIA</span><span class="dot">●</span>
+    <span>INFLUENCER</span><span class="dot">●</span>
+    <span>POP-UP</span><span class="dot">●</span>
+    <span>PAID ADS</span><span class="dot">●</span>
+    <span>BRAND DESIGN</span><span class="dot">●</span>
+    <span>K-BEAUTY · K-FOOD</span><span class="dot">●</span>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" aria-labelledby="about-title">
+  <div class="section-head reveal">
+    <span class="mono">About</span>
+  </div>
+  <div class="about-grid">
+    <div class="reveal">
+      <p class="about-lede" id="about-title">멕시코 시장을 위한<br><em>토탈 디지털 마케팅</em> 서비스</p>
+      <p class="about-sub">멕시코/중남미 시장에 대한 경험과 이해를 바탕으로,<br>비즈니스 성장에 필요한 마케팅 서비스를 제공합니다.</p>
+    </div>
+    <div class="reveal">
+      <ul class="exp-list">
+        <li><span class="bullet" aria-hidden="true"></span>멕시코, 한국 코드를 모두 이해하는 글로벌 팀</li>
+        <li><span class="bullet" aria-hidden="true"></span>북미·중남미 소셜미디어, 인플루언서 마케팅 운영대행 경험</li>
+        <li><span class="bullet" aria-hidden="true"></span>멕시코 인하우스 마케터 근무, 오프라인 이벤트 운영 경험</li>
+        <li><span class="bullet" aria-hidden="true"></span>40K+ 중남미 팔로워 계정 운영 경험, 5M+ 누적 영상 조회</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT WE DO ===== -->
+<section class="what" id="what" aria-labelledby="what-intro-text">
+  <div class="section-head reveal">
+    <span class="mono">What we do</span>
+  </div>
+  <p class="what-intro reveal" id="what-intro-text">멕시코에서 소셜 미디어를 비롯한 브랜드 마케팅은 소비자와 효과적으로 연결되기 위한 필수 전략입니다. 콘텐츠 기획부터 제작, 커뮤니티 운영, 광고 집행까지 모든 과정을 데이터 기반으로 수행하여 브랜드 인지도 향상, 팔로워 및 잠재 고객 확보, 나아가 매출 증대까지 지원합니다.</p>
+
+  <div class="reveal">
+    <span class="stat-label">멕시코 소셜미디어 활성 사용자</span>
+    <div class="platform-stats" aria-label="멕시코 소셜미디어 활성 사용자 수">
+      <div class="platform-stat">
+        <span class="mono">Facebook</span>
+        <b>9,300만<span class="unit">명+</span></b>
+      </div>
+      <div class="platform-stat">
+        <span class="mono">TikTok</span>
+        <b>5,700만<span class="unit">명+</span></b>
+      </div>
+    </div>
+  </div>
+
+  <div class="chain">
+    <div class="chain-item reveal">
+      <span class="mono">Social</span>
+      <h3>소셜미디어 대행</h3>
+      <p>채널 전략, 콘텐츠 기획·제작, 커뮤니티 관리까지 운영 전반을 담당합니다.</p>
+    </div>
+    <div class="chain-item reveal">
+      <span class="mono">Influencer</span>
+      <h3>인플루언서 마케팅</h3>
+      <p>현지 크리에이터 발굴부터 시딩, 캠페인 실행까지 전 과정을 대행합니다.</p>
+    </div>
+    <div class="chain-item reveal">
+      <span class="mono">Pop-up</span>
+      <h3>팝업 · 이벤트</h3>
+      <p>브랜드를 오프라인에서 경험하게 하는 팝업과 이벤트를 기획·운영합니다.</p>
+    </div>
+    <div class="chain-item reveal">
+      <span class="mono">Ads</span>
+      <h3>광고 대행</h3>
+      <p>퍼포먼스 목표에 맞춘 디지털 광고를 세팅하고 데이터로 최적화합니다.</p>
+    </div>
+  </div>
+
+  <div class="partnership-note reveal">
+    <span class="mono">+ Partnership</span>
+    <p>파트너십 서비스를 통해 NOM 라벨링, 통관, 현지 배송, 온라인 몰 입점·판매까지 — 멕시코 진출 풀패키지 지원이 가능합니다.</p>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" aria-label="Services">
+  <div class="section-head reveal">
+    <span class="mono">Services</span>
+  </div>
+
+  <div class="service-row reveal">
+    <div>
+      <h3 class="service-name"><span class="tick" aria-hidden="true"></span>Brand Strategy</h3>
+      <p class="service-desc">시장에 대한 이해를 바탕으로, 중남미에서 통하는 브랜드 전략과 캠페인 로드맵을 설계합니다.</p>
+    </div>
+    <div class="tags">
+      <span class="tag">Brand Building</span>
+      <span class="tag">Campaign Planning</span>
+    </div>
+  </div>
+
+  <div class="service-row reveal">
+    <div>
+      <h3 class="service-name"><span class="tick" aria-hidden="true"></span>Social Media Management</h3>
+      <p class="service-desc">콘텐츠 기획·제작, 커뮤니티 관리, 채널 운영까지 — 데이터 기반으로 계정을 성장시킵니다.</p>
+    </div>
+    <div class="tags">
+      <span class="tag">Content Planning</span>
+      <span class="tag">Content Production</span>
+      <span class="tag">Community Management</span>
+    </div>
+  </div>
+
+  <div class="service-row reveal">
+    <div>
+      <h3 class="service-name"><span class="tick" aria-hidden="true"></span>Influencer Marketing</h3>
+      <p class="service-desc">멕시코·중남미 현지 크리에이터 네트워크를 활용해, 신뢰할 수 있는 목소리로 브랜드를 알립니다.</p>
+    </div>
+    <div class="tags">
+      <span class="tag">Influencer Campaigns</span>
+      <span class="tag">UGC Campaigns</span>
+      <span class="tag">Seeding</span>
+    </div>
+  </div>
+
+  <div class="service-row reveal">
+    <div>
+      <h3 class="service-name"><span class="tick" aria-hidden="true"></span>Brand Campaigns</h3>
+      <p class="service-desc">온라인 마케팅부터 오프라인 팝업까지, 브랜드의 타겟에게 정확히 전달되는 캠페인을 기획하고 실행합니다.</p>
+    </div>
+    <div class="tags">
+      <span class="tag">Online Campaigns</span>
+      <span class="tag">Seasonal Promotions</span>
+      <span class="tag">Brand Activations</span>
+      <span class="tag">Off-line Event</span>
+    </div>
+  </div>
+
+  <div class="service-row reveal">
+    <div>
+      <h3 class="service-name"><span class="tick" aria-hidden="true"></span>Brand Design</h3>
+      <p class="service-desc">현지 감성에 맞는 브랜드 아이덴티티와 웹사이트, 인쇄물 등 브랜드 자산을 디자인합니다.</p>
+    </div>
+    <div class="tags">
+      <span class="tag">Brand Identity</span>
+      <span class="tag">Website</span>
+      <span class="tag">Print</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GOOD TO KNOW ===== -->
+<section class="faq" id="good-to-know" aria-labelledby="faq-title">
+  <span class="mono reveal">Good to know</span>
+  <h2 id="faq-title" class="reveal">Q&amp;A</h2>
+  <div class="faq-list reveal">
+    <details class="faq-item">
+      <summary>인플루언서 시딩 전 과정 대행<span class="plus" aria-hidden="true"></span></summary>
+      <div class="faq-body">비즈니스 형태와 니즈에 따라 무가·유가·방문형 체험단을 진행합니다. 크리에이터 리스트업, 컨택, 콘텐츠 확인, 결과 리포트까지 전 과정을 수행합니다.</div>
+    </details>
+    <details class="faq-item">
+      <summary>K-Beauty 멕시코 진출 All-in-One 대행<span class="plus" aria-hidden="true"></span></summary>
+      <div class="faq-body">파트너사를 통해 멕시코 공식 규격(NOM) 라벨링, 수입 통관, 현지 배송까지 한 번에 대행 가능합니다. 마케팅과 물류를 하나의 흐름으로 연결하여, 현지 진출을 원활하게 지원합니다.</div>
+    </details>
+    <details class="faq-item">
+      <summary>비즈니스 규모와 업종에 맞는 패키지 제공<span class="plus" aria-hidden="true"></span></summary>
+      <div class="faq-body">스타트업부터 기업까지, 예산과 목표에 맞춰 서비스 범위를 조정한 패키지를 제안드립니다. 문의 시 브랜드와 목표를 간단히 알려주세요.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ===== BOARDING PASS ===== -->
+<div class="ticket-wrap reveal" aria-hidden="true">
+  <div class="ticket">
+    <div class="ticket-main">
+      <div class="ticket-top">
+        <span class="mono">Boarding Pass</span>
+        <span class="mono ticket-flight">MKT·001</span>
+      </div>
+      <div class="ticket-route">
+        <div class="ticket-port">
+          <b>ICN</b>
+          <span>SEOUL</span>
+        </div>
+        <div class="ticket-plane">
+          <svg width="54" height="14" viewBox="0 0 70 16" fill="none" aria-hidden="true">
+            <line x1="0" y1="8" x2="26" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 4" stroke-linecap="round"/>
+            <path d="M31 8 h10 l6 -5 3 1 -4 4 4 4 -3 1 -6 -5 z" fill="currentColor"/>
+            <line x1="44" y1="8" x2="70" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="ticket-port">
+          <b>MEX</b>
+          <span>MEXICO CITY</span>
+        </div>
+      </div>
+      <div class="ticket-details">
+        <div><span class="mono">Class</span><b>Marketing</b></div>
+        <div><span class="mono">Gate</span><b>K→MX</b></div>
+        <div><span class="mono">Seat</span><b>1A</b></div>
+      </div>
+    </div>
+    <div class="ticket-stub">
+      <span class="mono">ICN → MEX</span>
+      <div class="ticket-barcode">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <span class="mono reveal">Contact</span>
+  <h2 id="contact-title" class="reveal">Let's work together</h2>
+  <a class="mail-btn reveal" href="mailto:sia@blueboat.co.kr">
+    CONTACT ME
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M5 12h14"/><path d="m13 5 7 7-7 7"/>
+    </svg>
+  </a>
+  <p class="contact-alt reveal">메일 앱이 열리지 않는다면 <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sia@blueboat.co.kr" target="_blank" rel="noopener">Gmail로 문의하기</a></p>
+</section>
+</main>
+
+<footer>
+  <span>© 2026. All rights reserved.</span>
+  <span class="route-mini mono">SEOUL ⇄ MEXICO CITY</span>
+</footer>
+
+<script>
+// header border on scroll
+const header=document.getElementById('header');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>10),{passive:true});
+
+// mobile nav
+const toggle=document.getElementById('navToggle');
+const nav=document.getElementById('nav');
+toggle.addEventListener('click',()=>{
+  const open=nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded',open);
+  toggle.textContent=open?'CLOSE':'MENU';
+});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  nav.classList.remove('open');
+  toggle.setAttribute('aria-expanded','false');
+  toggle.textContent='MENU';
+}));
+
+// scroll reveal (respects reduced motion)
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduce&&'IntersectionObserver'in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+  }),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}else{
+  document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+}
+</script>
+</body>
+</html>
