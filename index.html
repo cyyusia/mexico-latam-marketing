@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>멕시코·중남미 마케팅 | 한국 브랜드 소셜미디어·인플루언서 마케팅 대행</title>
-<meta name="description" content="한국 브랜드를 위한 멕시코·중남미 마케팅 서비스. 소셜미디어 운영, 인플루언서 마케팅, 팝업, 광고 대행부터 파트너십을 통한 NOM 라벨링·통관·배송까지 지원합니다.">
-<meta name="keywords" content="멕시코 마케팅, 중남미 마케팅 대행, 멕시코 인플루언서, 소셜미디어 운영대행, K-Beauty 멕시코 진출, NOM 라벨링">
-<meta property="og:title" content="Brand Marketing in Mexico That Delivers Real Results">
+<title>Studio Horchata — Brand Marketing in Mexico / Latin America</title>
+<meta name="description" content="Studio Horchata는 멕시코·중남미 글로벌 마케팅 전문 에이전시입니다. 소셜미디어, 인플루언서, 팝업, 광고 대행부터 파트너십을 통한 NOM 라벨링·통관·배송까지 지원합니다.">
+<meta name="keywords" content="멕시코 마케팅, 중남미 마케팅 대행, 멕시코 인플루언서, 소셜미디어 운영대행, K-Beauty 멕시코 진출, NOM 라벨링, Studio Horchata">
+<meta property="og:title" content="Studio Horchata — Brand Marketing in Mexico / Latin America">
 <meta property="og:description" content="소셜미디어 · 인플루언서 · 팝업 · 광고 — 멕시코·중남미 마케팅 대행">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "멕시코·중남미 마케팅 서비스",
-  "description": "한국 브랜드를 위한 멕시코·중남미 소셜미디어, 인플루언서, 팝업, 광고 마케팅 대행",
+  "name": "Studio Horchata",
+  "description": "멕시코·중남미 글로벌 마케팅 전문 에이전시",
   "areaServed": ["Mexico", "Latin America", "South Korea"],
   "knowsAbout": ["Social Media Marketing", "Influencer Marketing", "Brand Campaigns", "Brand Design"]
 }
@@ -81,7 +81,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 /* ---------- header ---------- */
 header{
   position:fixed;inset:0 0 auto 0;z-index:100;
-  display:flex;align-items:center;justify-content:flex-end;
+  display:flex;align-items:center;justify-content:space-between;
   padding:18px var(--gutter);
   background:rgba(255,255,255,.85);
   backdrop-filter:blur(10px);
@@ -89,6 +89,10 @@ header{
   transition:border-color .3s;
 }
 header.scrolled{border-bottom-color:var(--hair)}
+.wordmark{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.22em;
+  text-transform:uppercase;font-weight:500;text-decoration:none;
+}
 nav{display:flex;gap:4px}
 nav a{
   text-decoration:none;font-weight:500;font-size:12px;
@@ -122,8 +126,8 @@ nav a.nav-cta:hover{background:var(--ink);color:#fff;opacity:1}
   margin-bottom:26px;
 }
 h1{
-  font-size:clamp(30px,5.2vw,72px);
-  max-width:24ch;
+  font-size:clamp(38px,7vw,96px);
+  line-height:1.08;
   font-weight:300;
 }
 h1 b{font-weight:500}
@@ -163,82 +167,98 @@ h2 b{font-weight:500}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
 
-/* about */
-.about-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,100px);
-  align-items:start;max-width:1200px;margin:0 auto;
+/* about (hola) */
+.hola{max-width:1200px;margin:0 auto}
+.hola-title{
+  font-size:clamp(26px,4.4vw,60px);
+  font-weight:300;line-height:1.22;letter-spacing:-.01em;
 }
-.about-lede{
-  font-family:"Poppins","Pretendard Variable",sans-serif;
-  font-size:clamp(24px,2.8vw,38px);font-weight:300;line-height:1.4;letter-spacing:-.01em;
-}
-.about-lede b{font-weight:500}
 .about-sub{
-  margin-top:22px;font-size:15px;line-height:1.9;color:var(--gray);
+  margin-top:clamp(28px,4vw,40px);font-size:15.5px;line-height:2;color:var(--gray);
 }
-.exp-list{list-style:none;border-top:1px solid var(--ink)}
-.exp-list li{
-  display:flex;gap:16px;align-items:baseline;
-  border-bottom:1px solid var(--hair);
-  padding:18px 4px;font-size:15px;line-height:1.7;
+/* country roulette */
+.roll{
+  display:inline-block;vertical-align:bottom;
+  height:1.22em;overflow:hidden;
+  margin-left:.1em;
 }
-.exp-list .px{
-  flex:none;width:8px;height:8px;background:var(--ink);
+.roll-track{
+  display:block;
+  animation:roll 16.8s cubic-bezier(.7,0,.3,1) infinite;
+}
+.roll-track span{
+  display:block;height:1.22em;line-height:1.22em;
+  font-weight:500;white-space:nowrap;
+}
+@keyframes roll{
+  0%,10.7%   {transform:translateY(0)}
+  12.5%,23.2%{transform:translateY(-12.5%)}
+  25%,35.7%  {transform:translateY(-25%)}
+  37.5%,48.2%{transform:translateY(-37.5%)}
+  50%,60.7%  {transform:translateY(-50%)}
+  62.5%,73.2%{transform:translateY(-62.5%)}
+  75%,85.7%  {transform:translateY(-75%)}
+  87.5%,100% {transform:translateY(-87.5%)}
+}
+@media (prefers-reduced-motion:reduce){
+  .roll-track{animation:none}
 }
 
-/* what we do */
-.what{max-width:1200px;margin:0 auto}
-.what-intro{
-  font-size:clamp(16px,1.7vw,19px);line-height:1.95;
-  max-width:62ch;color:var(--ink);
-  margin-bottom:clamp(48px,6vw,72px);
+/* we build (black, apple-style scroll rise) */
+.build{
+  background:#0B0B0B;color:#fff;
+  min-height:110svh;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  padding:clamp(100px,14vw,180px) var(--gutter);
 }
-.stat-label{
-  display:block;font-family:"IBM Plex Mono",monospace;
-  font-size:11px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--gray);margin-bottom:16px;
+.build::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.85;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0 0 0 0 0 0 0.25 0.55 0.9'/%3E%3C/feComponentTransfer%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
 }
-.platform-stats{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:0;margin-bottom:clamp(48px,6vw,72px);max-width:760px;
-  border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+.build::after{
+  content:"";position:absolute;top:-160px;right:8%;width:420px;height:420px;
+  border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(90,160,150,.28),transparent 65%);
 }
-.platform-stat{
-  padding:30px 4px;
+.build-inner{
+  position:relative;z-index:1;
+  display:flex;flex-direction:column;align-items:center;text-align:center;
 }
-.platform-stat + .platform-stat{border-left:1px solid var(--hair);padding-left:30px}
-.platform-stat .mono{display:block;margin-bottom:12px;color:var(--ink)}
-.platform-stat b{
-  font-family:"Poppins","Pretendard Variable",sans-serif;
-  font-weight:200;font-size:clamp(40px,5vw,64px);line-height:1;letter-spacing:-.02em;
+.build-label{
+  color:rgba(255,255,255,.65);letter-spacing:.34em;margin-bottom:clamp(28px,4vw,44px);
 }
-.platform-stat .unit{
-  font-size:.4em;font-weight:400;margin-left:6px;color:var(--gray);
+.build-boxes{
+  display:flex;flex-direction:column;align-items:center;
+  font-family:"Playfair Display",serif;font-weight:500;
+  font-size:clamp(40px,7.5vw,104px);line-height:1;letter-spacing:0;
 }
-.chain{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  border-top:1px solid var(--ink);border-left:1px solid var(--ink);
+.build-boxes .bbox{
+  display:inline-block;background:#fff;color:#0B0B0B;
+  padding:.1em .28em .16em;
 }
-.chain-item{
-  border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);
-  padding:26px 22px;min-height:170px;
-  transition:background .25s,color .25s;
+.build-boxes .bbox i{font-style:italic;font-weight:400}
+.build-boxes .bbox-2{
+  margin-top:.08em;
+  transform:translateX(clamp(20px,6vw,90px));
 }
-.chain-item:hover{background:var(--ink);color:#fff}
-.chain-item:hover p{color:rgba(255,255,255,.7)}
-.chain-item:hover .mono{color:rgba(255,255,255,.6)}
-.chain-item .mono{display:block;margin-bottom:14px}
-.chain-item h3{
-  font-size:16.5px;font-weight:600;line-height:1.4;margin-bottom:8px;
+/* apple-style rise (JS-driven) */
+.rise{will-change:transform,opacity}
+@media (prefers-reduced-motion:reduce){
+  .rise{transform:none!important;opacity:1!important}
 }
-.chain-item p{font-size:13.5px;color:var(--gray);line-height:1.7}
-.partnership-note{
-  margin-top:clamp(36px,5vw,56px);
-  display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;
-  font-size:14px;color:var(--gray);
+@media (max-width:680px){
+  .build-boxes .bbox-2{transform:translateX(6vw)}
 }
-.partnership-note .mono{flex:none;color:var(--ink)}
-.partnership-note p{max-width:66ch}
+
+/* welcome onboard */
+.onboard{
+  text-align:center;
+  font-family:"Playfair Display",serif;font-weight:500;
+  font-size:clamp(30px,4.6vw,58px);letter-spacing:.01em;
+  margin:clamp(40px,6vw,80px) var(--gutter) 0;
+}
+.onboard i{font-style:italic;font-weight:400}
 
 /* services */
 .services{max-width:1200px;margin:0 auto}
@@ -269,105 +289,14 @@ h2 b{font-weight:500}
 }
 .tag:hover{background:var(--ink);color:#fff}
 
-/* good to know (FAQ) */
-.faq{max-width:880px;margin:0 auto;text-align:center}
-.faq .section-label{justify-content:center}
-.faq h2{margin-bottom:clamp(36px,5vw,56px)}
-.faq-list{text-align:left;border-top:1px solid var(--ink)}
-.faq-item{border-bottom:1px solid var(--hair)}
-.faq-item summary{
-  list-style:none;cursor:pointer;
-  display:flex;justify-content:space-between;align-items:center;gap:20px;
-  padding:26px 4px;
-  font-weight:600;font-size:clamp(15.5px,1.6vw,18px);letter-spacing:-.005em;
-}
-.faq-item summary::-webkit-details-marker{display:none}
-.faq-item summary .plus{
-  flex:none;position:relative;width:16px;height:16px;
-}
-.faq-item summary .plus::before,
-.faq-item summary .plus::after{
-  content:"";position:absolute;background:var(--ink);
-  transition:transform .25s;
-}
-.faq-item summary .plus::before{left:0;top:7px;width:16px;height:2px}
-.faq-item summary .plus::after{left:7px;top:0;width:2px;height:16px}
-.faq-item[open] summary .plus::after{transform:scaleY(0)}
-.faq-item .faq-body{
-  padding:0 4px 26px;
-  font-size:14.5px;color:var(--gray);line-height:1.9;
-  max-width:62ch;
-}
-
-/* boarding pass */
-.ticket-wrap{
-  display:flex;justify-content:center;
-  padding:0 var(--gutter);
-  margin:clamp(30px,4vw,56px) 0;
-}
-.ticket{
-  display:flex;width:min(400px,100%);
-  background:#fff;border:1px solid var(--ink);
-  overflow:hidden;position:relative;
-}
-.ticket-main{flex:1;padding:14px 18px 12px;min-width:0}
-.ticket-top{
-  display:flex;justify-content:space-between;align-items:center;
-  margin-bottom:10px;
-}
-.ticket-top .mono,.ticket-stub .mono{font-size:9px;color:var(--ink)}
-.ticket-route{
-  display:flex;align-items:center;justify-content:space-between;gap:10px;
-}
-.ticket-port b{
-  display:block;font-family:"Poppins",sans-serif;font-weight:400;
-  font-size:clamp(20px,3vw,25px);line-height:1;letter-spacing:.02em;
-}
-.ticket-port span{
-  font-family:"IBM Plex Mono",monospace;font-size:8.5px;letter-spacing:.14em;
-  color:var(--gray);
-}
-.ticket-port:last-child{text-align:right}
-.ticket-plane{color:var(--ink);flex:none}
-.ticket-details{
-  display:flex;gap:22px;margin-top:11px;padding-top:9px;
-  border-top:1px solid var(--hair);
-}
-.ticket-details .mono{display:block;font-size:8px;color:var(--gray)}
-.ticket-details b{font-size:11px;font-weight:600}
-.ticket-stub{
-  flex:none;width:94px;
-  border-left:1px dashed var(--ink);
-  padding:14px 12px 12px;
-  display:flex;flex-direction:column;justify-content:space-between;gap:8px;
-  position:relative;
-}
-.ticket-stub::before,.ticket-stub::after{
-  content:"";position:absolute;left:-7px;width:13px;height:13px;border-radius:50%;
-  background:var(--bg);
-}
-.ticket-stub::before{top:-7px}
-.ticket-stub::after{bottom:-7px}
-.ticket-barcode{display:flex;gap:2.5px;align-items:stretch;height:26px}
-.ticket-barcode i{display:block;background:var(--ink);width:2.5px}
-.ticket-barcode i:nth-child(3n){width:4px}
-.ticket-barcode i:nth-child(4n){width:1.5px}
-@media (max-width:480px){
-  .ticket-stub{display:none}
-  .ticket-details{gap:16px}
-}
-
 /* contact */
 .contact{
   text-align:center;
+  padding-top:clamp(36px,5vw,56px);
   padding-bottom:clamp(100px,13vw,170px);
   position:relative;
 }
-.contact .section-label{justify-content:center}
-.contact h2{
-  font-size:clamp(32px,5vw,64px);
-  margin:0 auto clamp(36px,5vw,52px);
-}
+.contact .section-label{justify-content:center;margin-bottom:clamp(24px,3vw,36px)}
 .mail-btn{
   display:inline-flex;align-items:center;gap:14px;
   font-family:"IBM Plex Mono",monospace;font-weight:500;
@@ -396,7 +325,6 @@ footer{
 
 /* ---------- responsive ---------- */
 @media (max-width:860px){
-  .about-grid{grid-template-columns:1fr}
   .service-row{grid-template-columns:1fr}
 }
 @media (max-width:680px){
@@ -425,10 +353,11 @@ footer{
 <a class="skip-link" href="#main">본문으로 건너뛰기</a>
 
 <header id="header">
+  <a class="wordmark" href="#top">Studio Horchata</a>
   <button class="nav-toggle" aria-expanded="false" aria-controls="nav" id="navToggle">MENU</button>
   <nav id="nav" aria-label="주요 메뉴">
     <a href="#about">About</a>
-    <a href="#what">What we do</a>
+    <a href="#build">We build</a>
     <a href="#services">Services</a>
     <a class="nav-cta" href="#contact">Contact</a>
   </nav>
@@ -463,11 +392,11 @@ footer{
     </svg>
   </span>
 
-  <p class="hero-eyebrow mono">Korea → Mexico · LATAM Marketing</p>
+  <p class="hero-eyebrow mono">Brand Marketing in Mexico / Latin America</p>
 
   <div class="hero-line" aria-hidden="true">
     <span class="zig"><svg viewBox="0 0 240 10" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6"/></svg></span>
-    <h1 class="display">Brand Marketing in Mexico<br>That Delivers <b>Real Results</b></h1>
+    <h1 class="display">Studio<br><b>Horchata</b></h1>
     <span class="zig"><svg viewBox="0 0 240 10" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6"/></svg></span>
   </div>
 
@@ -485,70 +414,33 @@ footer{
     <span class="mono">About</span>
     <span class="zig" aria-hidden="true"><svg viewBox="0 0 64 10" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6"/></svg></span>
   </div>
-  <div class="about-grid">
-    <div class="reveal">
-      <p class="about-lede" id="about-title">멕시코 시장을 위한<br><b>토탈 디지털 마케팅</b> 서비스</p>
-      <p class="about-sub">멕시코/중남미 시장에 대한 경험과 이해를 바탕으로,<br>비즈니스 성장에 필요한 마케팅 서비스를 제공합니다.</p>
-    </div>
-    <div class="reveal">
-      <ul class="exp-list">
-        <li><span class="px" aria-hidden="true"></span>멕시코, 한국 코드를 모두 이해하는 글로벌 팀</li>
-        <li><span class="px" aria-hidden="true"></span>북미·중남미 소셜미디어, 인플루언서 마케팅 운영대행 경험</li>
-        <li><span class="px" aria-hidden="true"></span>멕시코 인하우스 마케터 근무, 오프라인 이벤트 운영 경험</li>
-        <li><span class="px" aria-hidden="true"></span>40K+ 중남미 팔로워 계정 운영 경험, 5M+ 누적 영상 조회</li>
-      </ul>
-    </div>
+  <div class="hola reveal">
+    <h2 id="about-title" class="hola-title display">HOLA,<br>WELCOME TO:
+      <span class="roll" aria-label="MÉXICO, USA, COLOMBIA, PERÚ, GUATEMALA, CHILE, ARGENTINA">
+        <span class="roll-track" aria-hidden="true">
+          <span>MÉXICO</span>
+          <span>USA</span>
+          <span>COLOMBIA</span>
+          <span>PERÚ</span>
+          <span>GUATEMALA</span>
+          <span>CHILE</span>
+          <span>ARGENTINA</span>
+          <span>MÉXICO</span>
+        </span>
+      </span>
+    </h2>
+    <p class="about-sub">STUDIO HORCHATA는 멕시코시티 기반 중남미 글로벌 마케팅 전문 에이전시입니다.<br>시장에 대한 이해도가 높은 글로벌 팀으로 구성되어 있으며,<br>비즈니스, 브랜드의 스페인어권 시장 개척과 확장을 지원합니다.</p>
   </div>
 </section>
 
-<!-- ===== WHAT WE DO ===== -->
-<section class="what" id="what" aria-labelledby="what-intro-text">
-  <div class="section-label reveal">
-    <span class="mono">What we do</span>
-    <span class="zig" aria-hidden="true"><svg viewBox="0 0 64 10" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6 v-6 h6 v6 h6"/></svg></span>
-  </div>
-  <p class="what-intro reveal" id="what-intro-text">멕시코에서 소셜 미디어를 비롯한 브랜드 마케팅은 소비자와 효과적으로 연결되기 위한 필수 전략입니다. 콘텐츠 기획부터 제작, 커뮤니티 운영, 광고 집행까지 모든 과정을 데이터 기반으로 수행하여 브랜드 인지도 향상, 팔로워 및 잠재 고객 확보, 나아가 매출 증대까지 지원합니다.</p>
-
-  <div class="reveal">
-    <span class="stat-label">멕시코 소셜미디어 활성 사용자</span>
-    <div class="platform-stats" aria-label="멕시코 소셜미디어 활성 사용자 수">
-      <div class="platform-stat">
-        <span class="mono">Facebook</span>
-        <b>9,300만<span class="unit">명+</span></b>
-      </div>
-      <div class="platform-stat">
-        <span class="mono">TikTok</span>
-        <b>5,700만<span class="unit">명+</span></b>
-      </div>
-    </div>
-  </div>
-
-  <div class="chain reveal">
-    <div class="chain-item">
-      <span class="mono">01 · Social</span>
-      <h3>소셜미디어 대행</h3>
-      <p>채널 전략, 콘텐츠 기획·제작, 커뮤니티 관리까지 운영 전반을 담당합니다.</p>
-    </div>
-    <div class="chain-item">
-      <span class="mono">02 · Influencer</span>
-      <h3>인플루언서 마케팅</h3>
-      <p>현지 크리에이터 발굴부터 시딩, 캠페인 실행까지 전 과정을 대행합니다.</p>
-    </div>
-    <div class="chain-item">
-      <span class="mono">03 · Pop-up</span>
-      <h3>팝업 · 이벤트</h3>
-      <p>브랜드를 오프라인에서 경험하게 하는 팝업과 이벤트를 기획·운영합니다.</p>
-    </div>
-    <div class="chain-item">
-      <span class="mono">04 · Ads</span>
-      <h3>광고 대행</h3>
-      <p>퍼포먼스 목표에 맞춘 디지털 광고를 세팅하고 데이터로 최적화합니다.</p>
-    </div>
-  </div>
-
-  <div class="partnership-note reveal">
-    <span class="mono">+ Partnership</span>
-    <p>파트너십 서비스를 통해 NOM 라벨링, 통관, 현지 배송, 온라인 몰 입점·판매까지 — 멕시코 진출 풀패키지 지원이 가능합니다.</p>
+<!-- ===== WE BUILD ===== -->
+<section class="build" id="build" aria-labelledby="build-title">
+  <div class="build-inner">
+    <span class="mono build-label rise" data-speed="1.15">We build</span>
+    <h2 id="build-title" class="build-boxes">
+      <span class="bbox rise" data-speed="1">B<i>o</i>rder<i>l</i>ess</span>
+      <span class="bbox bbox-2 rise" data-speed="0.8">Ex<i>p</i>erience</span>
+    </h2>
   </div>
 </section>
 
@@ -562,7 +454,7 @@ footer{
   <div class="service-row reveal">
     <div>
       <h3 class="service-name"><span class="idx">(01)</span>Brand Strategy</h3>
-      <p class="service-desc">시장에 대한 이해를 바탕으로, 중남미에서 통하는 브랜드 전략과 캠페인 로드맵을 설계합니다.</p>
+      <p class="service-desc">비즈니스에 맞는 Go-To-Market 전략과 로드맵을 설계합니다.</p>
     </div>
     <div class="tags">
       <span class="tag">Brand Building</span>
@@ -573,7 +465,7 @@ footer{
   <div class="service-row reveal">
     <div>
       <h3 class="service-name"><span class="idx">(02)</span>Social Media Management</h3>
-      <p class="service-desc">콘텐츠 기획·제작, 커뮤니티 관리, 채널 운영까지 — 데이터 기반으로 계정을 성장시킵니다.</p>
+      <p class="service-desc">소셜 미디어를 통해 브랜드 정체성을 구축하고 온라인 성장을 지원합니다.</p>
     </div>
     <div class="tags">
       <span class="tag">Content Planning</span>
@@ -585,7 +477,7 @@ footer{
   <div class="service-row reveal">
     <div>
       <h3 class="service-name"><span class="idx">(03)</span>Influencer Marketing</h3>
-      <p class="service-desc">멕시코·중남미 현지 크리에이터 네트워크를 활용해, 신뢰할 수 있는 목소리로 브랜드를 알립니다.</p>
+      <p class="service-desc">멕시코·중남미 현지 크리에이터 네트워크와 협업하여 브랜드를 알립니다.</p>
     </div>
     <div class="tags">
       <span class="tag">Influencer Campaigns</span>
@@ -597,7 +489,7 @@ footer{
   <div class="service-row reveal">
     <div>
       <h3 class="service-name"><span class="idx">(04)</span>Brand Campaigns</h3>
-      <p class="service-desc">온라인 마케팅부터 오프라인 팝업까지, 브랜드의 타겟에게 정확히 전달되는 캠페인을 기획하고 실행합니다.</p>
+      <p class="service-desc">온라인 마케팅부터 오프라인 팝업까지, 캠페인을 기획하고 실행합니다.</p>
     </div>
     <div class="tags">
       <span class="tag">Online Campaigns</span>
@@ -610,7 +502,7 @@ footer{
   <div class="service-row reveal">
     <div>
       <h3 class="service-name"><span class="idx">(05)</span>Brand Design</h3>
-      <p class="service-desc">현지 감성에 맞는 브랜드 아이덴티티와 웹사이트, 인쇄물 등 브랜드 자산을 디자인합니다.</p>
+      <p class="service-desc">현지 감성에 맞는 BI, 웹사이트, 인쇄물 등 브랜드 자산을 디자인합니다.</p>
     </div>
     <div class="tags">
       <span class="tag">Brand Identity</span>
@@ -620,74 +512,14 @@ footer{
   </div>
 </section>
 
-<!-- ===== GOOD TO KNOW ===== -->
-<section class="faq" id="good-to-know" aria-labelledby="faq-title">
-  <div class="section-label reveal">
-    <span class="mono">Good to know</span>
-  </div>
-  <h2 id="faq-title" class="reveal">Q&amp;A</h2>
-  <div class="faq-list reveal">
-    <details class="faq-item">
-      <summary>인플루언서 시딩 전 과정 대행<span class="plus" aria-hidden="true"></span></summary>
-      <div class="faq-body">비즈니스 형태와 니즈에 따라 무가·유가·방문형 체험단을 진행합니다. 크리에이터 리스트업, 컨택, 콘텐츠 확인, 결과 리포트까지 전 과정을 수행합니다.</div>
-    </details>
-    <details class="faq-item">
-      <summary>K-Beauty 멕시코 진출 All-in-One 대행<span class="plus" aria-hidden="true"></span></summary>
-      <div class="faq-body">파트너사를 통해 멕시코 공식 규격(NOM) 라벨링, 수입 통관, 현지 배송까지 한 번에 대행 가능합니다. 마케팅과 물류를 하나의 흐름으로 연결하여, 현지 진출을 원활하게 지원합니다.</div>
-    </details>
-    <details class="faq-item">
-      <summary>비즈니스 규모와 업종에 맞는 패키지 제공<span class="plus" aria-hidden="true"></span></summary>
-      <div class="faq-body">스타트업부터 기업까지, 예산과 목표에 맞춰 서비스 범위를 조정한 패키지를 제안드립니다. 문의 시 브랜드와 목표를 간단히 알려주세요.</div>
-    </details>
-  </div>
-</section>
-
-<!-- ===== BOARDING PASS ===== -->
-<div class="ticket-wrap reveal" aria-hidden="true">
-  <div class="ticket">
-    <div class="ticket-main">
-      <div class="ticket-top">
-        <span class="mono">Boarding Pass</span>
-        <span class="mono">MKT·001</span>
-      </div>
-      <div class="ticket-route">
-        <div class="ticket-port">
-          <b>ICN</b>
-          <span>SEOUL</span>
-        </div>
-        <div class="ticket-plane">
-          <svg width="54" height="14" viewBox="0 0 70 16" fill="none" aria-hidden="true" style="transform:scaleX(-1)">
-            <line x1="0" y1="8" x2="26" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 4" stroke-linecap="round"/>
-            <path d="M31 8 h10 l6 -5 3 1 -4 4 4 4 -3 1 -6 -5 z" fill="currentColor"/>
-            <line x1="44" y1="8" x2="70" y2="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 4" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="ticket-port">
-          <b>MEX</b>
-          <span>MEXICO CITY</span>
-        </div>
-      </div>
-      <div class="ticket-details">
-        <div><span class="mono">Class</span><b>Business</b></div>
-        <div><span class="mono">Gate</span><b>1</b></div>
-        <div><span class="mono">Seat</span><b>1A</b></div>
-      </div>
-    </div>
-    <div class="ticket-stub">
-      <span class="mono">ICN → MEX</span>
-      <div class="ticket-barcode">
-        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- ===== ONBOARD ===== -->
+<div class="onboard reveal" aria-hidden="true">Wel<i>c</i>ome onb<i>oa</i>rd</div>
 
 <!-- ===== CONTACT ===== -->
-<section class="contact" id="contact" aria-labelledby="contact-title">
+<section class="contact" id="contact" aria-label="Contact">
   <div class="section-label reveal">
     <span class="mono">Contact</span>
   </div>
-  <h2 id="contact-title" class="reveal display">Let's work <b>together</b></h2>
   <a class="mail-btn reveal" href="mailto:info@studiohorchata.com">
     Contact me
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -699,7 +531,7 @@ footer{
 </main>
 
 <footer>
-  <span>© 2026. ALL RIGHTS RESERVED.</span>
+  <span>© 2026 STUDIO HORCHATA. ALL RIGHTS RESERVED.</span>
   <span>SEOUL ⇄ MEXICO CITY</span>
 </footer>
 
@@ -721,6 +553,34 @@ nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
   toggle.setAttribute('aria-expanded','false');
   toggle.textContent='MENU';
 }));
+
+// apple-style scroll rise for WE BUILD section
+const buildSec=document.getElementById('build');
+const rises=buildSec?[...buildSec.querySelectorAll('.rise')]:[];
+function updateRise(){
+  if(!buildSec)return;
+  const vh=innerHeight;
+  const r=buildSec.getBoundingClientRect();
+  // progress: 0 when section top hits bottom of viewport, 1 when centered
+  let p=(vh-r.top)/(vh*0.85);
+  p=Math.min(1,Math.max(0,p));
+  const ease=1-Math.pow(1-p,3);
+  rises.forEach(el=>{
+    const sp=parseFloat(el.dataset.speed||1);
+    el.style.transform=`translateY(${(1-ease)*110*sp}px)`;
+    el.style.opacity=ease;
+  });
+}
+const reduceRise=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduceRise&&rises.length){
+  let ticking=false;
+  const onScroll=()=>{
+    if(!ticking){requestAnimationFrame(()=>{updateRise();ticking=false});ticking=true}
+  };
+  addEventListener('scroll',onScroll,{passive:true});
+  addEventListener('resize',onScroll,{passive:true});
+  updateRise();
+}
 
 // scroll reveal (respects reduced motion)
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
