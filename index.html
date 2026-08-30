@@ -75,6 +75,8 @@ body{
   font-size:clamp(1.6rem,4.3vw,4rem);
   font-weight:700; line-height:1.14; letter-spacing:-.035em;
   color:var(--white);
+  /* Stops the narrow-screen break leaving "Strategy," alone on its own line. */
+  text-wrap:balance;
 }
 
 .hero-bottom{ display:flex; justify-content:space-between; align-items:flex-end; gap:24px; }
@@ -324,7 +326,18 @@ footer a:hover{ color:var(--bone); }
 @media (max-width:600px){
   .wrow{ grid-template-columns:1fr; }
   .wshots{ grid-template-columns:repeat(2,1fr); gap:14px; }
-  .drop{ height:135svh; }
+  /* Four 3:4 placeholders stacked 2x2 made this section ~1450px tall. */
+  .shot{ aspect-ratio:1/1; }
+  /* Taller than the desktop ratio so the pile has room to land before the
+     section scrolls past on a phone. */
+  .drop{ height:165svh; }
+  /* space-between across a full screen left a ~450px hole under the eyebrow;
+     keep the eyebrow with the headline and pin the rest to the bottom. */
+  .hero{ justify-content:flex-start; padding-top:clamp(96px,14vh,132px); }
+  .hero-bottom{ margin-top:auto; }
+  .hero-h{ margin-top:clamp(18px,3vh,28px); }
+  .contact{ padding:clamp(64px,9vh,88px) var(--gut) clamp(56px,8vh,80px); }
+  .body-col{ padding-bottom:clamp(48px,7vh,72px); }
   .pill{ font-size:15px; padding:.45em 1.05em; }
   .hero-bottom{ flex-direction:column; align-items:flex-start; gap:32px; }
   .explore{ width:88px; height:88px; }
@@ -645,7 +658,10 @@ footer a:hover{ color:var(--bone); }
         var it = items[i];
         var margin = it.w / 2 + 8;
         var x = margin + rnd() * Math.max(12, W - margin * 2);
-        var y = -it.h - 60 - (i - base) * 130;
+        // Start just above the stage. They used to spawn up to a full screen
+        // higher, which never landed on phones: the scroll range there is only
+        // ~280px, so the section scrolled away while they were still in mid-air.
+        var y = -it.h - 24 - (i - base) * 58;
         M.Body.setPosition(it.body, { x:x, y:y });
         M.Body.setAngle(it.body, (rnd() - 0.5) * 1.7);
         M.Body.setAngularVelocity(it.body, (rnd() - 0.5) * 0.14);
@@ -683,6 +699,16 @@ footer a:hover{ color:var(--bone); }
       var want = Math.min(N, Math.ceil((p / 0.55) * N));
       if (want > released) release(want);
       M.Engine.update(engine, 1000 / 60);
+      // Catch-up: while a word is still above the stage, take extra steps so a
+      // fast scroll on a phone never shows this section as an empty black band.
+      for (var g = 0; g < 8; g++){
+        var above = false;
+        for (var m = 0; m < released; m++){
+          if (items[m].body.position.y < 0){ above = true; break; }
+        }
+        if (!above) break;
+        M.Engine.update(engine, 1000 / 60);
+      }
       paint();
       if (cue) cue.style.opacity = p > 0.1 ? 0 : 1;
       raf = requestAnimationFrame(loop);
